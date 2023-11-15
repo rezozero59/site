@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import proj1 from "../../public/images/projects/archi.webp";
+import proj1 from "../../public/images/projects/archi2.webp";
 import proj2 from "../../public/images/projects/kasa2.webp";
 import proj3 from "../../public/images/projects/Grimoire.webp";
 
