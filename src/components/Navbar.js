@@ -129,7 +129,7 @@ const Navbar = () => {
         >
           <motion.a
             target={"_blank"}
-            className="w-6 mx-4"
+            className="w-6 mx-6"
             href="https://github.com/rezozero59"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -139,7 +139,7 @@ const Navbar = () => {
           </motion.a>
           <motion.a
             target={"_blank"}
-            className="w-6 mx-4"
+            className="w-6 mx-6"
             href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -149,7 +149,7 @@ const Navbar = () => {
           </motion.a>
           <button
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
-            className={` w-6 h-6 ease mx-4  sm:mx-4 flex items-center justify-center rounded-full p-1  
+            className={` w-6 h-6 ease mx-6  sm:mx-6 flex items-center justify-center rounded-full p-1  
             ${mode === "light" ? "bg-dark  text-light" : "bg-light  text-dark"}
             `}
             aria-label="theme-switcher"
