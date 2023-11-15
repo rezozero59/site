@@ -8,6 +8,8 @@ import Link from "next/link";
 import proj1 from "../../public/images/projects/archi2.webp";
 import proj2 from "../../public/images/projects/kasa2.webp";
 import proj3 from "../../public/images/projects/Grimoire.webp";
+import proj4 from "../../public/images/projects/booki.webp";
+import proj5 from "../../public/images/projects/carducci.webp";
 
 import leftArrow from "../../public/images/codeLeft.png";
 import rightArrow from "../../public/images/codeRight.png";
@@ -43,6 +45,23 @@ const projects = [
     github:
       "https://github.com/rezozero59/Portfolio-architecte-sophie-bluel.git",
   },
+  {
+    type: "HTML,CSS",
+    title: "Booki, site d'hébergements de vacances",
+    summary: "Intégration d'une maquette en HTML et CSS.",
+    img: proj4,
+    github:
+      "https://github.com/rezozero59/Portfolio-architecte-sophie-bluel.git",
+  },
+  {
+    type: "SEO, accessibilité, debug",
+    title: "Nina, Carducci, photographe",
+    summary:
+      "Amélioration des performances, de l'accessibilité et du SEO d'un site de photographe.",
+    img: proj5,
+    github:
+      "https://github.com/rezozero59/Portfolio-architecte-sophie-bluel.git",
+  },
 ];
 
 const FeaturedProject = ({
@@ -72,7 +91,7 @@ const FeaturedProject = ({
         <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">
           {summary}
         </p>
-        <div className="w-full overflow-hidden rounded-lg lg:w-full">
+        <div className="w-full overflow-hidden rounded-lg lg:w-full mb-8">
           <FramerImage
             src={img}
             alt={title}
