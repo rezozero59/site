@@ -1,15 +1,14 @@
 import AnimatedText from "@/components/AnimatedText";
-
 import Layout from "@/components/Layout";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import profilePic from "../../public/images/profile/laurent-delassus2.webp";
 import leftArrow from "../../public/images/codeLeft.png";
-// import leftArrowDark from "../../public/images/codeLeftWhite.png";
 import rightArrow from "../../public/images/codeRight.png";
 import Skills from "@/components/Skills";
 import Services from "@/components/Services";
+import logo from "../../public/images/logo.png";
 
 export default function Home() {
   return (
@@ -69,7 +68,14 @@ export default function Home() {
                   innovantes. Découvrez ici mes derniers projets et sites
                   internet!
                 </p>
-                <div className="flex justify-center">
+                <div className="flex justify-around dark:invert">
+                  <Image
+                    src={logo}
+                    alt="logo"
+                    className="h-auto w-10 "
+                    sizes=""
+                    priority
+                  />
                   <Link
                     href="mailto:laurentdelassus@gmail.com"
                     className="flex items-center justify-around w-48 rounded-lg border-2 border-solid bg-dark p-2.5 px-4 text-lg font-semibold

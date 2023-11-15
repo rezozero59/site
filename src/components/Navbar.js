@@ -1,12 +1,9 @@
 import Link from "next/link";
 import React, { useState } from "react";
-import Image from "next/image";
 import { useRouter } from "next/router";
 import { GithubIcon, LinkedInIcon, MoonIcon, SunIcon } from "./Icons";
 import { motion } from "framer-motion";
 import { useThemeSwitch } from "./Hooks/useThemeSwitch";
-import logo from "../../public/images/logo.png";
-import logoDark from "../../public/images/logo2.png";
 
 const CustomLink = ({ href, title, className = "" }) => {
   const router = useRouter();
@@ -87,8 +84,6 @@ const Navbar = () => {
     setIsOpen(!isOpen);
   };
 
-  const logoSwitch = mode === "light" ? logo : logoDark;
-
   return (
     <header
       className=" w-full flex items-center justify-between px-24 py-3 font-medium z-10 dark:text-light bg-black/20 dark:bg-white/5 sticky top-0 
@@ -120,33 +115,21 @@ const Navbar = () => {
         ></span>
       </button>
 
-      <div className="w-full flex relative justify-between items-center ">
-        <nav className=" relative flex items-center justify-center lg:hidden  ">
-          <CustomLink className="mr-4" href="#" title="Accueil" />
+      <div className="w-full flex  justify-between items-center ">
+        <nav className="  flex items-center justify-center lg:hidden  ">
+          <CustomLink className="mr-4" href="home" title="Accueil" />
           <CustomLink className="mx-4" href="#services" title="Services" />
           <CustomLink className="mx-4" href="#projects" title="Projets" />
           <CustomLink className="mx-4" href="#contact" title="Contact" />
         </nav>
 
-        <Link href="/">
-          <div className="flex items-center absolute top-1/2 left-1/2  transform -translate-x-1/2 -translate-y-1/2 justify-center">
-            <Image
-              src={logoSwitch}
-              alt="logo"
-              className="h-auto w-6"
-              sizes=""
-              priority
-            />
-          </div>
-        </Link>
-
         <nav
-          className="flex items-center justify-center flex-wrap md:mt-2 md:w-full md:justify-end md:items-center md:flex-nowrap
+          className="flex items-center   md:mt-2 w-full justify-end  
       "
         >
           <motion.a
             target={"_blank"}
-            className="w-6 mx-3"
+            className="w-6 mx-4"
             href="https://github.com/rezozero59"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -156,7 +139,7 @@ const Navbar = () => {
           </motion.a>
           <motion.a
             target={"_blank"}
-            className="w-6 mx-3"
+            className="w-6 mx-4"
             href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile"
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
@@ -166,7 +149,7 @@ const Navbar = () => {
           </motion.a>
           <button
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
-            className={` w-6 h-6 ease m-1 ml-3 sm:mx-1 flex items-center justify-center rounded-full p-1  
+            className={` w-6 h-6 ease mx-4  sm:mx-4 flex items-center justify-center rounded-full p-1  
             ${mode === "light" ? "bg-dark  text-light" : "bg-light  text-dark"}
             `}
             aria-label="theme-switcher"
@@ -193,7 +176,7 @@ const Navbar = () => {
             <CustomMobileLink
               toggle={handleClick}
               className="mx-4 mb-4 mt-0  text-light text-xl "
-              href="#"
+              href="#home"
               title="Accueil"
             />
             <CustomMobileLink
