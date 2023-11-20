@@ -22,7 +22,7 @@ function Services() {
           <div className=" w-full grid grid-cols-2 gap-6 lg:grid-cols-1 md:place-items-center">
             <div className=" w-full border-2 bg-gray-300/20 border-dark dark:border-light dark:bg-light/5 rounded-md m-4  transition duration-300 transform hover:scale-105 shadow-lg h-60 md:h-auto">
               <h4
-                className="text-xl font-bold  text-center   sm:text-lg h-20 rounded-sm mb-4 p-3
+                className="text-xl font-bold  text-center   sm:text-lg h-20 md:h-auto rounded-sm mb-4 p-3
                dark:border-light bg-dark/90 dark:bg-light/90 text-light dark:text-dark"
               >
                 Création de Sites Internet Modernes et Réactifs
