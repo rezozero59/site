@@ -1,7 +1,6 @@
 import SkillCard from "./SkillCard";
 import Layout from "./Layout";
-import leftArrow from "../../public/images/codeLeft.png";
-import rightArrow from "../../public/images/codeRight.png";
+
 import Image from "next/image";
 import logoNext from "../../public/images/logos/next.png";
 import logoMongo from "../../public/images/logos/mongo.png";
@@ -81,30 +80,12 @@ const Skills = () => {
       }
     >
       <Layout>
-        <div className="skills-container  flex flex-col w-full items-center justify-center border-t-2 border-gray-900 dark:border-light ">
-          <div className="flex items-center ">
-            <Image
-              src={leftArrow}
-              alt=""
-              className="h-16 w-16 dark:invert "
-              sizes=""
-              priority
-            />
-            <h3 className="w-full text-5xl font-bold text-myred pt-8 text-center mt-4 mb-6 md:text-3xl sm:text-xl">
-              Environnement technique
+        <div className="skills-container  flex flex-col w-full items-center justify-center border-t-2 border-gray-900 dark:border-light pt-8">
+          <div className="flex items-center justify-center ">
+            <h3 className="w-full text-5xl font-bold text-myred  text-center md:text-3xl  mb-8">
+              Technologies
             </h3>
-            <Image
-              src={rightArrow}
-              alt="Portrait de Laurent Delassus"
-              className="h-16 w-16 "
-              sizes=""
-              priority
-            />
           </div>
-
-          <p className="w-full text-2xl px-8 text-center font-semibold mb-6">
-            Technologies utilisées pour vos projets.
-          </p>
 
           <div className="grid grid-cols-4 gap-8 xl:grid-cols-3 lg:grid-cols-2  md:grid-cols-2 sm:grid-cols-2 md:gap-8 ">
             {skills.map((skill, index) => (

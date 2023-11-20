@@ -4,8 +4,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import profilePic from "../../public/images/profile/laurent-delassus2.webp";
-import leftArrow from "../../public/images/codeLeft.png";
-import rightArrow from "../../public/images/codeRight.png";
+
 import Skills from "@/components/Skills";
 import Services from "@/components/Services";
 import logo from "../../public/images/logo.png";
@@ -25,7 +24,10 @@ export default function Home() {
         className={`flex min-h-screen items-center text-dark dark:text-light sm:items-start`}
       >
         <Layout className="!pt-8 md:!pt-8 sm:!pt-8">
-          <div className="flex w-full items-center first-line:justify-between lg:flex-col ">
+          <div
+            className="flex w-full items-center first-line:justify-between lg:flex-col "
+            id="home"
+          >
             <div className=" w-1/2 lg:w-full  order-1 lg:order-2  lg:flex lg:justify-center">
               <Image
                 src={profilePic}
@@ -38,23 +40,9 @@ export default function Home() {
             <div className="flex w-1/2 flex-col order-2 md:order-1 items-center self-center lg:w-full lg:text-center ">
               <div>
                 <div className="mt-2 gap-5 flex justify-around w-full  ">
-                  <Image
-                    src={leftArrow}
-                    alt=""
-                    className="h-16 w-16 dark:invert "
-                    sizes=""
-                    priority
-                  />
                   <AnimatedText
                     text="Laurent Delassus"
                     className=" !text-4xl mb-4 pb-4 xl:!text-4xl !text-center lg:!text-3xl md:!text-2xl sm:!text-2xl border-b-2 border-gray-900 dark:border-light"
-                  />
-                  <Image
-                    src={rightArrow}
-                    alt="Portrait de Laurent Delassus"
-                    className="h-16 w-16 "
-                    sizes=""
-                    priority
                   />
                 </div>
                 <AnimatedText
@@ -77,7 +65,7 @@ export default function Home() {
                     priority
                   />
                   <Link
-                    href="mailto:laurentdelassus@gmail.com"
+                    href="#contact"
                     className="flex items-center justify-around w-48 rounded-lg border-2 border-solid bg-dark p-2.5 px-4 text-lg font-semibold
                   capitalize text-light hover:border-dark hover:bg-transparent hover:text-dark 
                   dark:bg-light dark:text-dark dark:hover:border-light dark:hover:bg-dark dark:hover:text-light

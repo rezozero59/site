@@ -1,8 +1,5 @@
 import Layout from "@/components/Layout";
 import React, { useState } from "react";
-import Image from "next/image";
-import leftArrow from "../../public/images/codeLeft.png";
-import rightArrow from "../../public/images/codeRight.png";
 
 export default function ContactForm() {
   const [name, setName] = useState("");
@@ -48,25 +45,9 @@ export default function ContactForm() {
     <Layout>
       <div id="contact" className="flex flex-col justify-center items-center">
         <div className="flex items-center ">
-          <Image
-            src={leftArrow}
-            alt=""
-            className="h-16 w-16 dark:invert "
-            sizes=""
-            priority
-          />
-
           <h2 className="text-myred text-center text-5xl md:3xl sm:text-xl font-bold">
             Me contacter
           </h2>
-
-          <Image
-            src={rightArrow}
-            alt="Portrait de Laurent Delassus"
-            className="h-16 w-16 "
-            sizes=""
-            priority
-          />
         </div>
         <p className="text-xl font-semibold mt-4 text-center dark:text-light">
           Un projet précis ? Des questions ou besoin de conseils, c&apos;est ici

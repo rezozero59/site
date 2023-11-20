@@ -2,8 +2,6 @@ import React, { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import LiIcon from "./LiIcon";
 import Image from "next/image";
-import leftArrow from "../../public/images/codeLeft.png";
-import rightArrow from "../../public/images/codeRight.png";
 
 const Details = ({ position, time, address, work }) => {
   const ref = useRef(null);
@@ -41,23 +39,9 @@ const Experience = () => {
   return (
     <div className="my-16">
       <div className="flex items-center ">
-        <Image
-          src={leftArrow}
-          alt=""
-          className="h-16 w-16 dark:invert "
-          sizes=""
-          priority
-        />
-        <h2 className="font-bold text-myred text-5xl mb-16 w-full text-center md:text-3xl sm:text-xl border-t-2 pt-8 border-gray-900 dark:border-light ">
-          Dev&apos;web, mais pas que!
+        <h2 className="font-bold text-myred text-5xl mb-16 w-full text-center md:text-3xl  border-t-2 pt-8 border-gray-900 dark:border-light ">
+          Le Dev&apos;Web
         </h2>
-        <Image
-          src={rightArrow}
-          alt="Portrait de Laurent Delassus"
-          className="h-16 w-16 "
-          sizes=""
-          priority
-        />
       </div>
 
       <div ref={ref} className="relative w-[75%] mx-auto lg:w-[90%] md:w-full">

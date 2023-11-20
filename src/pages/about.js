@@ -50,23 +50,9 @@ export default function About() {
       >
         <Layout>
           <div className="flex items-center mb-16 sm:mb-8 border-t-2 pt-8 border-gray-900 dark:border-light">
-            <Image
-              src={leftArrow}
-              alt=""
-              className="h-16 w-16 dark:invert  "
-              sizes=""
-              priority
-            />
             <AnimatedText
               text="Passion et polyvalence !"
-              className=" !text-5xl text-myred !leading-tight dark:text-myred md:!text-3xl sm:!text-xl xs:!text-xl "
-            />
-            <Image
-              src={rightArrow}
-              alt="Portrait de Laurent Delassus"
-              className="h-16 w-16 "
-              sizes=""
-              priority
+              className=" text-5xl text-myred !leading-tight dark:text-myred md:text-3xl  "
             />
           </div>
 

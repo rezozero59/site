@@ -12,8 +12,6 @@ import proj4 from "../../public/images/projects/booki.webp";
 import proj5 from "../../public/images/projects/carducci.webp";
 import imgTvShow from "../../public/images/projects/tvshow.webp";
 
-import leftArrow from "../../public/images/codeLeft.png";
-import rightArrow from "../../public/images/codeRight.png";
 import ProjectModal from "@/components/ProjectModal";
 import { useState } from "react";
 
@@ -96,7 +94,7 @@ const FeaturedProject = ({
         >
           {type}
         </button>
-        <h2 className="my-2 text-4xl underline font-bold lg:text-3xl xs:text-2xl">
+        <h2 className="my-2 text-4xl  font-bold lg:text-3xl xs:text-2xl">
           {title}
         </h2>
         <p className="my-2 font-medium text-dark dark:text-light sm:text-sm">
@@ -162,23 +160,9 @@ export default function Projects() {
       >
         <Layout>
           <div className="flex items-center ">
-            <Image
-              src={leftArrow}
-              alt=""
-              className="h-16 w-16 dark:invert  "
-              sizes=""
-              priority
-            />
             <AnimatedText
-              text="Des projets et des idées !"
-              className="mb-8 !text-5xl text-myred font-bold dark:text-myred !leading-tight sm:mb-8 md:text-3xl sm:!text-xl border-t-2 pt-8 border-gray-900 dark:border-light"
-            />
-            <Image
-              src={rightArrow}
-              alt="Portrait de Laurent Delassus"
-              className="h-16 w-16 "
-              sizes=""
-              priority
+              text=" Projets & Idées !"
+              className="mb-8 text-5xl text-myred font-bold dark:text-myred !leading-tight sm:mb-8 md:text-3xl border-t-2 pt-8 border-gray-900 dark:border-light"
             />
           </div>
 
