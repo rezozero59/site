@@ -6,8 +6,6 @@ import { useInView, useMotionValue, useSpring } from "framer-motion";
 import { useEffect, useRef } from "react";
 import Experience from "@/components/Experience";
 import AnimatedText from "@/components/AnimatedText";
-import leftArrow from "../../public/images/codeLeft.png";
-import rightArrow from "../../public/images/codeRight.png";
 
 function AnimatedNumberFramerMotion({ value }) {
   const ref = useRef(null);

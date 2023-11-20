@@ -7,9 +7,15 @@ import profilePic from "../../public/images/profile/laurent-delassus2.webp";
 
 import Skills from "@/components/Skills";
 import Services from "@/components/Services";
-import logo from "../../public/images/logo.png";
 
 export default function Home() {
+  const handleContactClick = (e) => {
+    e.preventDefault();
+    const contactSection = document.querySelector("#contact");
+    if (contactSection) {
+      contactSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <>
       <Head>
@@ -57,15 +63,16 @@ export default function Home() {
                   internet!
                 </p>
                 <div className="flex justify-around dark:invert">
-                  <Link
+                  <a
                     href="#contact"
+                    onClick={handleContactClick}
                     className="flex items-center justify-around w-48 rounded-lg border-2 border-solid bg-dark p-2.5 px-4 text-lg font-semibold
-                  capitalize text-light hover:border-dark hover:bg-transparent hover:text-dark 
-                  dark:bg-light dark:text-dark dark:hover:border-light dark:hover:bg-dark dark:hover:text-light
-                  md:p-2 md:px-4 md:text-base"
+            capitalize text-light hover:border-dark hover:bg-transparent hover:text-dark 
+            dark:bg-light dark:text-dark dark:hover:border-light dark:hover:bg-dark dark:hover:text-light
+            md:p-2 md:px-4 md:text-base"
                   >
                     Contact <i className="fa-regular fa-envelope"></i>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
