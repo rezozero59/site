@@ -33,7 +33,7 @@ export default function ContactForm() {
           setName("");
           setEmail("");
           setMessage("");
-        }, 2000); // Réinitialiser les champs après 2 secondes
+        }, 2000);
       } else {
         setFeedback("Erreur lors de l'envoi de l'e-mail.");
         setFeedbackType("error");

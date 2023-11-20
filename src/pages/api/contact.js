@@ -26,7 +26,9 @@ export default async function handler(req, res) {
       replyTo: req.body.email, // Ajoutez cette ligne pour permettre la réponse directe à l'expéditeur
       to: "laurentdelassus@gmail.com", // Votre adresse email
       subject: `Message de ${req.body.name}`,
+      // Détailler l expediteur
       text: req.body.message,
+      // Mettre enforme le message
     };
 
     transporter.sendMail(mailOptions, (error, info) => {

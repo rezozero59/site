@@ -10,6 +10,7 @@ import proj2 from "../../public/images/projects/kasa2.webp";
 import proj3 from "../../public/images/projects/Grimoire.webp";
 import proj4 from "../../public/images/projects/booki.webp";
 import proj5 from "../../public/images/projects/carducci.webp";
+import imgTvShow from "../../public/images/projects/tvshow.webp";
 
 import leftArrow from "../../public/images/codeLeft.png";
 import rightArrow from "../../public/images/codeRight.png";
@@ -19,6 +20,16 @@ import { useState } from "react";
 const FramerImage = motion(Image);
 
 const projects = [
+  {
+    type: "React",
+    title: "TV Show, recherche de séries",
+    summary:
+      "Une application de recherche de séries codée en React, avec utilisation d'une API externe qui propose de façon dynamique des recommandations.",
+    img: imgTvShow,
+    github:
+      "https://github.com/rezozero59/Portfolio-architecte-sophie-bluel.git",
+  },
+
   {
     type: "Vanilla JavaScript",
     title: "Sophie, Bluel, architecte d'intérieur",
@@ -74,7 +85,7 @@ const FeaturedProject = ({
 }) => {
   return (
     <article
-      className=" flex flex-col w-full items-center justify-between rounded-3xl border
+      className=" h-90vh flex flex-col w-full items-center justify-between rounded-3xl border
       border-solid border-dark bg-light p-12 shadow-2xl dark:border-light dark:bg-dark lg:flex-col 
       lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4"
     >
