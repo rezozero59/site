@@ -24,8 +24,7 @@ const projects = [
     summary:
       "Une application de recherche de séries codée en React, avec utilisation d'une API externe qui propose de façon dynamique des recommandations.",
     img: imgTvShow,
-    github:
-      "https://github.com/rezozero59/Portfolio-architecte-sophie-bluel.git",
+    github: "https://tvwatch-laurent-delassus-projects.vercel.app/",
   },
 
   {
