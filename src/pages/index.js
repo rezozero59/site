@@ -57,13 +57,6 @@ export default function Home() {
                   internet!
                 </p>
                 <div className="flex justify-around dark:invert">
-                  <Image
-                    src={logo}
-                    alt="logo"
-                    className="h-auto w-10 "
-                    sizes=""
-                    priority
-                  />
                   <Link
                     href="#contact"
                     className="flex items-center justify-around w-48 rounded-lg border-2 border-solid bg-dark p-2.5 px-4 text-lg font-semibold
