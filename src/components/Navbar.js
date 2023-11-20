@@ -182,16 +182,17 @@ const Navbar = () => {
             />
             <CustomMobileLink
               toggle={handleClick}
+              className="mx-4 my-4 text-light text-xl"
+              href="#services"
+              title="Services"
+            />
+            <CustomMobileLink
+              toggle={handleClick}
               className="mx-4 my-4  text-light text-xl"
               href="#projects"
               title="Projets"
             />
-            <CustomMobileLink
-              toggle={handleClick}
-              className="mx-4 my-4 text-light text-xl"
-              href="#about"
-              title="À propos"
-            />
+
             <CustomMobileLink
               toggle={handleClick}
               className="mx-4 mt-4 mb-12 text-light text-xl"

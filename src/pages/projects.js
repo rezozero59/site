@@ -161,7 +161,7 @@ export default function Projects() {
           <div className="flex items-center ">
             <AnimatedText
               text=" Projets & Idées !"
-              className="mb-8 text-5xl text-myred font-bold dark:text-myred !leading-tight sm:mb-8 md:text-3xl border-t-2 pt-8 border-gray-900 dark:border-light"
+              className="mb-8 text-5xl text-myred font-bold dark:text-myred sm:mb-8 md:text-3xl border-t-2 pt-8 border-gray-900 dark:border-light"
             />
           </div>
 
