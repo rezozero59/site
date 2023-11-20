@@ -43,7 +43,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
           <motion.div
             className="flex flex-col items-center justify-center bg-white dark:bg-dark p-6 rounded-lg shadow-lg max-w-5xl w-full relative"
             variants={modalVariants}
-            onClick={(e) => e.stopPropagation()} // Empêche le clic de se propager au fond
+            onClick={(e) => e.stopPropagation()}
           >
             <button onClick={onClose} className="absolute top-2 right-2 ">
               {closeIcon}
