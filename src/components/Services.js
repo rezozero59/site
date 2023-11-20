@@ -39,7 +39,7 @@ function Services() {
             </div>
             <div className=" w-full border-2 bg-gray-300/20 border-dark dark:border-light dark:bg-light/5 rounded-md m-4  transition duration-300 transform hover:scale-105 shadow-lg h-60 md:h-auto">
               <h4
-                className="text-xl font-bold  text-center   sm:text-lg h-20 rounded-sm mb-4 pt-3
+                className="text-xl font-bold  text-center   sm:text-lg h-20 md:h-auto rounded-sm mb-4 pt-3
                dark:border-light bg-dark/90 dark:bg-light/90 text-light dark:text-dark"
               >
                 Développement Full Stack, applications Web responsives
@@ -56,7 +56,7 @@ function Services() {
 
             <div className=" w-full border-2 bg-gray-300/20 border-dark dark:border-light dark:bg-light/5 rounded-md m-4  transition duration-300 transform hover:scale-105 shadow-lg h-60 md:h-auto">
               <h4
-                className="text-xl font-bold  text-center   sm:text-lg h-20 rounded-sm mb-4 pt-3
+                className="text-xl font-bold  text-center   sm:text-lg h-20 md:h-auto rounded-sm mb-4 pt-3
                dark:border-light bg-dark/90 dark:bg-light/90 text-light dark:text-dark"
               >
                 Optimisation, Référencement et Maintenance
@@ -71,7 +71,7 @@ function Services() {
             </div>
             <div className=" w-full border-2 bg-gray-300/20 border-dark dark:border-light dark:bg-light/5 rounded-md m-4  transition duration-300 transform hover:scale-105 shadow-lg h-60 md:h-auto">
               <h4
-                className="text-xl font-bold  text-center   sm:text-lg h-20 rounded-sm mb-4 pt-3
+                className="text-xl font-bold  text-center   sm:text-lg h-20 md:h-auto rounded-sm mb-4 pt-3
                dark:border-light bg-dark/90 dark:bg-light/90 text-light dark:text-dark"
               >
                 Conseils et Solutions Personnalisées
@@ -87,7 +87,7 @@ function Services() {
             </div>
             <div className=" w-full border-2 bg-gray-300/20 border-dark dark:border-light dark:bg-light/5 rounded-md m-4  transition duration-300 transform hover:scale-105 shadow-lg h-60 md:h-auto">
               <h4
-                className="text-xl font-bold  text-center   sm:text-lg h-20 rounded-sm mb-4 pt-3
+                className="text-xl font-bold  text-center   sm:text-lg h-20 md:h-auto rounded-sm mb-4 pt-3
                dark:border-light bg-dark/90 dark:bg-light/90 text-light dark:text-dark"
               >
                 Développement Backend et Gestion de Données
@@ -102,7 +102,7 @@ function Services() {
             </div>
             <div className=" w-full border-2 bg-gray-300/20 border-dark dark:border-light dark:bg-light/5 rounded-md m-4  transition duration-300 transform hover:scale-105 shadow-lg h-60 md:h-auto">
               <h4
-                className="text-xl font-bold  text-center   sm:text-lg h-20 rounded-sm mb-4 pt-3
+                className="text-xl font-bold  text-center   sm:text-lg h-20 md:h-auto rounded-sm mb-4 pt-3
                dark:border-light bg-dark/90 dark:bg-light/90 text-light dark:text-dark"
               >
                 Green Code et Écoconception Web
