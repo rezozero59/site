@@ -170,10 +170,10 @@ const Navbar = () => {
       py-16 bg-dark/80 dark:bg-light/80 rounded-md z-50 backdrop-blur-md
       "
           // CSS modale
-          initial={{ scale: 0, x: "-50%", y: "10%", opacity: 0 }}
+          initial={{ scale: 0, x: "-50%", y: "20%", opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
         >
-          <nav className="flex items-center justify-center flex-col">
+          <nav className="flex items-center justify-around flex-col">
             <CustomMobileLink
               toggle={handleClick}
               className="mx-4 mb-4 mt-0  text-light text-xl "
