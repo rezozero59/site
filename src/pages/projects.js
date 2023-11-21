@@ -85,7 +85,7 @@ const FeaturedProject = ({
     >
       <div className="flex w-full flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
         <button
-          className=" h-10  rounded-lg bg-myred p-2 px-6 text-lg font-semibold text-light dark:bg-myred dark:text-light sm:px-4 sm:text-base"
+          className=" h-10  rounded-lg bg-myred p-2 px-6 text-lg font-semibold text-light dark:bg-myred dark:text-light sm:px-4 sm:text-base cursor-default"
           aria-label="Voir le projet"
         >
           {type}
