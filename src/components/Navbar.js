@@ -165,7 +165,7 @@ const Navbar = () => {
 
       {isOpen ? (
         <motion.div
-          className="min-w-[70vw] sm:min-w-[90vw] md:h-[60vh] flex justify-center items-center flex-col md:fixed top-1/4 left-1/2 -translate-x-1/2
+          className="min-w-[70vw] sm:min-w-[90vw] md:h-[70vh] flex justify-center items-center flex-col md:fixed top-1/4 left-1/2 -translate-x-1/2
       -translate-y-1/2
       py-16 bg-dark/80 dark:bg-light/80 rounded-md z-50 backdrop-blur-md
       "
