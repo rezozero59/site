@@ -38,8 +38,8 @@ export default function Home() {
               <Image
                 src={profilePic}
                 alt="Portrait de Laurent Delassus"
-                className="h-auto w-3/4 mt-8 rounded-2xl "
-                sizes="100vw"
+                className="h-auto w-2/3 mt-8 rounded-2xl "
+                sizes="80vw"
                 priority
               />
             </div>
