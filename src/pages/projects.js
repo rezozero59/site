@@ -41,8 +41,7 @@ const projects = [
     title: "Kasa, location immobilière",
     summary: "Une application de location immobilière codée en React.",
     img: proj2,
-    github:
-      "https://github.com/rezozero59/Portfolio-architecte-sophie-bluel.git",
+    github: "https://github.com/rezozero59/06-react-kasa-laurent-delassus.git",
   },
   {
     type: "Node, Express, MongoDB",
@@ -50,8 +49,7 @@ const projects = [
     summary:
       "Back-end d'un site de notation de livres avec crétion d'un API Rest, d'une base de données MongoDB et d'un serveur Node.js.",
     img: proj3,
-    github:
-      "https://github.com/rezozero59/Portfolio-architecte-sophie-bluel.git",
+    github: "https://github.com/rezozero59/P7-grimoire-delassus.git",
   },
   {
     type: "HTML,CSS",
@@ -59,7 +57,7 @@ const projects = [
     summary: "Intégration d'une maquette en HTML et CSS.",
     img: proj4,
     github:
-      "https://github.com/rezozero59/Portfolio-architecte-sophie-bluel.git",
+      "https://github.com/rezozero59/booki-starter-code-master-Delassus.git",
   },
   {
     type: "SEO, accessibilité, debug",
@@ -67,8 +65,7 @@ const projects = [
     summary:
       "Amélioration des performances, de l'accessibilité et du SEO d'un site de photographe.",
     img: proj5,
-    github:
-      "https://github.com/rezozero59/Portfolio-architecte-sophie-bluel.git",
+    github: "https://github.com/rezozero59/Projet5-OC-delassus.git",
   },
 ];
 
@@ -103,7 +100,7 @@ const FeaturedProject = ({
           <FramerImage
             src={img}
             alt={title}
-            className=" w-full h-auto rounded-lg"
+            className=" w-full h-auto rounded-lg hover:cursor-pointer"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
             onClick={() =>
@@ -113,7 +110,11 @@ const FeaturedProject = ({
         </div>
 
         <div className="mt-2 w-full flex items-center justify-between ">
-          <Link href={github} target={"_blank"} className="w-10 mr-8">
+          <Link
+            href={github}
+            target={"_blank"}
+            className="w-10 mr-8 hover:cursor-pointer"
+          >
             <GithubIcon />
           </Link>
           <button
@@ -121,7 +122,7 @@ const FeaturedProject = ({
               e.stopPropagation();
               onProjectClick({ type, title, summary, img, github });
             }}
-            className="ml-8 h-10 w-48 rounded-lg bg-dark p-2 px-6 text-lg font-semibold text-light dark:bg-light dark:text-dark sm:px-4 sm:text-base"
+            className="ml-8 h-10 w-48 rounded-lg bg-dark p-2 px-6 text-lg font-semibold text-light dark:bg-light dark:text-dark sm:px-4 sm:text-base hover:cursor-pointer"
             aria-label="Voir le projet"
           >
             Voir le projet
