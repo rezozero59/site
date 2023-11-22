@@ -27,11 +27,11 @@ export default function Home() {
       </Head>
 
       <article
-        className={`flex min-h-screen items-center text-dark dark:text-light sm:items-start`}
+        className={`flex min-h-screen items-center text-dark dark:text-light sm:items-start mx-32 lg:mx-16 md:mx-12 sm:mx-8`}
       >
         <Layout className="!pt-8 md:!pt-8 sm:!pt-8">
           <div
-            className="flex w-full items-center first-line:justify-between lg:flex-col "
+            className="flex w-full items-center first-line:justify-between lg:flex-col  "
             id="home"
           >
             <div className=" w-1/2 lg:w-full  order-1 lg:order-2  lg:flex lg:justify-center">
@@ -52,7 +52,7 @@ export default function Home() {
                   />
                 </div>
                 <AnimatedText
-                  text="Développeur web Freelance"
+                  text="Développeur web"
                   className="font-bold text-myred dark:text-myred !text-6xl mb-8 xl:!text-6xl !text-center lg:!text-5xl md:!text-4xl sm:!text-3xl lg:order-1"
                 />
                 <p className=" border-2 border-gray-900 dark:border-light rounded-lg mb-8 p-6 font-medium text-xl lg:order-1">

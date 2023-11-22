@@ -156,10 +156,10 @@ export default function Projects() {
 
       <section
         id="projects"
-        className={`mb-16  flex w-full flex-col items-center justify-center dark:text-light`}
+        className={`mb-16   flex w-full flex-col items-center justify-center dark:text-light`}
       >
         <Layout>
-          <div className="flex items-center ">
+          <div className="flex items-center  ">
             <AnimatedText
               text=" Projets & Idées !"
               className="mb-8 text-5xl text-myred font-bold dark:text-myred sm:mb-8 md:text-3xl border-t-2 pt-8 border-gray-900 dark:border-light"
