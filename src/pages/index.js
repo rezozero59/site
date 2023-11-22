@@ -27,11 +27,11 @@ export default function Home() {
       </Head>
 
       <article
-        className={`flex min-h-screen items-center text-dark dark:text-light sm:items-start mx-32 lg:mx-16 md:mx-12 sm:mx-8`}
+        className={`flex min-h-screen items-center text-dark dark:text-light sm:items-start mx-32 lg:mx-16 md:mx-12 sm:mx-8 `}
       >
         <Layout className="!pt-8 md:!pt-8 sm:!pt-8">
           <div
-            className="flex w-full items-center first-line:justify-between lg:flex-col  "
+            className="flex w-full items-center first-line:justify-between lg:flex-col mb-16 lg:mb-8 "
             id="home"
           >
             <div className=" w-1/2 lg:w-full  order-1 lg:order-2  lg:flex lg:justify-center">
