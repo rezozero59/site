@@ -37,14 +37,14 @@ const Experience = () => {
   });
 
   return (
-    <div className="my-16">
+    <div className="my-16 md:px-6">
       <div className="flex items-center ">
         <h2 className="font-bold text-myred text-5xl mb-16 w-full text-center md:text-3xl  border-t-2 pt-8 border-gray-900 dark:border-light ">
           Le Dev&apos;Web
         </h2>
       </div>
 
-      <div ref={ref} className="relative w-[75%] mx-auto lg:w-[90%] md:w-full">
+      <div ref={ref} className="relative w-[75%] mx-auto lg:w-[90%] md:w-full ">
         <motion.div
           className="absolute left-9 top-0 w-[4px] md:w-[2px] md:left-[30px] xs:left-[20px] h-full bg-dark 
             origin-top  dark:bg-myred dark:shadow-3xl"

@@ -54,7 +54,7 @@ export default function About() {
             />
           </div>
 
-          <div className="grid grid-cols-3 gap-8 lg:grid-cols-1 sm:gap-6">
+          <div className="grid grid-cols-3 gap-8 lg:grid-cols-1 sm:gap-6 px-16 lg:px-48 md:px-32 sm:px-16">
             <div className="flex flex-col items-start justify-start">
               <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
                 À propos de moi
@@ -84,7 +84,7 @@ export default function About() {
             <Image
               src={profile}
               alt="Portrait de Laurent Delassus"
-              className="h-auto w-full rounded-2xl "
+              className="h-auto w-full  rounded-2xl "
               sizes="100vw"
               priority
             />

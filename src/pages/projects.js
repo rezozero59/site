@@ -166,7 +166,7 @@ export default function Projects() {
             />
           </div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-1 gap-4    ">
+          <div className="grid grid-cols-2 lg:grid-cols-1 gap-4 px-16 md:px-8   ">
             {projects.map((project, index) => (
               <div key={index} className="col-span-1">
                 <FeaturedProject
