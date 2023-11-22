@@ -49,7 +49,7 @@ export default function ContactForm() {
             Me contacter
           </h2>
         </div>
-        <p className="text-xl font-semibold mt-4 text-center dark:text-light">
+        <p className="text-xl font-semibold mt-4 px-16 text-center dark:text-light">
           Un projet précis ? Des questions ou besoin de conseils, c&apos;est ici
           !{" "}
         </p>
