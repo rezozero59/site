@@ -7,7 +7,7 @@ import Image from "next/image";
 import Link from "next/link";
 import proj1 from "../../public/images/projects/archi2.webp";
 import proj1b from "../../public/images/projects/archi3.webp";
-import proj1c from "../../public/images/projects/archi.webp";
+// import proj1c from "../../public/images/projects/archi.webp";
 
 import proj2 from "../../public/images/projects/kasa2.webp";
 import proj3 from "../../public/images/projects/Grimoire.webp";
@@ -44,7 +44,7 @@ const projects = [
       "https://github.com/rezozero59/Portfolio-architecte-sophie-bluel.git",
     content: {
       additionalText: "Description détaillée du projet...",
-      additionalImages: [proj1b, proj1c],
+      additionalImages: [proj1b],
     },
   },
   {
