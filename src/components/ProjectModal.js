@@ -7,8 +7,12 @@ const backdropVariants = {
 };
 
 const modalVariants = {
-  hidden: { y: "-100vh", opacity: 0 },
-  visible: { y: "0", opacity: 1, transition: { delay: 0.5 } },
+  hidden: { scale: 0.5, opacity: 0 },
+  visible: {
+    scale: 1,
+    opacity: 1,
+    transition: { duration: 0.3, ease: "easeInOut" },
+  },
 };
 
 const closeIcon = (
@@ -41,7 +45,9 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
           onClick={onClose}
         >
           <motion.div
-            className="flex flex-col items-center justify-center bg-white dark:bg-dark p-6 rounded-lg shadow-lg max-w-5xl w-full relative"
+            className="flex flex-col items-center justify-center bg-white dark:bg-dark p-6 rounded-lg shadow-lg max-w-5xl w-full relative overflow-y-scroll z-9999
+            "
+            style={{ maxHeight: "85vh" }}
             variants={modalVariants}
             onClick={(e) => e.stopPropagation()}
           >
@@ -59,13 +65,15 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
               width={500}
               height={300}
             />
-            {/* Ajoutez plus de détails ici si nécessaire */}
-            {/* Exemple d'affichage d'images supplémentaires */}
-            {project.additionalImages?.map((image, index) => (
+
+            {project.content?.additionalText && (
+              <p className="text-center">{project.content.additionalText}</p>
+            )}
+            {project.content?.additionalImages?.map((image, index) => (
               <Image
                 key={index}
                 src={image}
-                alt={`Image ${index}`}
+                alt={`Image supplémentaire ${index}`}
                 width={500}
                 height={300}
                 className="rounded-lg mb-4"

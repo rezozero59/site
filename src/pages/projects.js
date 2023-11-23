@@ -6,6 +6,9 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import proj1 from "../../public/images/projects/archi2.webp";
+import proj1b from "../../public/images/projects/archi3.webp";
+import proj1c from "../../public/images/projects/archi.webp";
+
 import proj2 from "../../public/images/projects/kasa2.webp";
 import proj3 from "../../public/images/projects/Grimoire.webp";
 import proj4 from "../../public/images/projects/booki.webp";
@@ -25,6 +28,10 @@ const projects = [
       "Une application de recherche de séries codée en React, avec utilisation d'une API externe qui propose de façon dynamique des recommandations.",
     img: imgTvShow,
     github: "https://tvwatch-laurent-delassus-projects.vercel.app/",
+    content: {
+      additionalText: "Description détaillée du projet...",
+      additionalImages: [],
+    },
   },
 
   {
@@ -35,6 +42,10 @@ const projects = [
     img: proj1,
     github:
       "https://github.com/rezozero59/Portfolio-architecte-sophie-bluel.git",
+    content: {
+      additionalText: "Description détaillée du projet...",
+      additionalImages: [proj1b, proj1c],
+    },
   },
   {
     type: "React, Sass",
@@ -42,6 +53,10 @@ const projects = [
     summary: "Une application de location immobilière codée en React.",
     img: proj2,
     github: "https://github.com/rezozero59/06-react-kasa-laurent-delassus.git",
+    content: {
+      additionalText: "Description détaillée du projet...",
+      additionalImages: [],
+    },
   },
   {
     type: "Node, Express, MongoDB",
@@ -50,6 +65,10 @@ const projects = [
       "Back-end d'un site de notation de livres avec crétion d'un API Rest, d'une base de données MongoDB et d'un serveur Node.js.",
     img: proj3,
     github: "https://github.com/rezozero59/P7-grimoire-delassus.git",
+    content: {
+      additionalText: "Description détaillée du projet...",
+      additionalImages: [],
+    },
   },
   {
     type: "HTML,CSS",
@@ -58,6 +77,10 @@ const projects = [
     img: proj4,
     github:
       "https://github.com/rezozero59/booki-starter-code-master-Delassus.git",
+    content: {
+      additionalText: "Description détaillée du projet...",
+      additionalImages: [],
+    },
   },
   {
     type: "SEO, accessibilité, debug",
@@ -66,6 +89,10 @@ const projects = [
       "Amélioration des performances, de l'accessibilité et du SEO d'un site de photographe.",
     img: proj5,
     github: "https://github.com/rezozero59/Projet5-OC-delassus.git",
+    content: {
+      additionalText: "Description détaillée du projet...",
+      additionalImages: [],
+    },
   },
 ];
 
@@ -86,7 +113,7 @@ const FeaturedProject = ({
       <div className="flex w-full flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
         <button
           className=" h-10  rounded-lg bg-myred p-2 px-6 text-lg font-semibold text-light dark:bg-myred dark:text-light sm:px-4 sm:text-base cursor-default"
-          aria-label="Voir le projet"
+          aria-label="technologie utilisée"
         >
           {type}
         </button>
@@ -104,7 +131,13 @@ const FeaturedProject = ({
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.2 }}
             onClick={() =>
-              onProjectClick({ type, title, summary, img, github })
+              onProjectClick({
+                type,
+                title,
+                summary,
+                img,
+                github,
+              })
             }
           />
         </div>
@@ -120,7 +153,13 @@ const FeaturedProject = ({
           <button
             onClick={(e) => {
               e.stopPropagation();
-              onProjectClick({ type, title, summary, img, github });
+              onProjectClick({
+                type,
+                title,
+                summary,
+                img,
+                github,
+              });
             }}
             className="ml-8 h-10 w-48 rounded-lg bg-dark p-2 px-6 text-lg font-semibold text-light dark:bg-light dark:text-dark sm:px-4 sm:text-base hover:cursor-pointer"
             aria-label="Voir le projet"
@@ -137,7 +176,10 @@ export default function Projects() {
   const [selectedProject, setSelectedProject] = useState(null);
 
   const openModal = (project) => {
-    setSelectedProject(project);
+    setSelectedProject({
+      ...project, // Ceci inclut type, title, summary, img, github
+      content: projects.find((p) => p.title === project.title)?.content, // Ajoute le contenu supplémentaire
+    });
   };
 
   const closeModal = () => {
