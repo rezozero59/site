@@ -7,12 +7,33 @@ import Image from "next/image";
 import Link from "next/link";
 import proj1 from "../../public/images/projects/archi2.webp";
 import proj1b from "../../public/images/projects/archi3.webp";
-// import proj1c from "../../public/images/projects/archi.webp";
+import proj1c from "../../public/images/projects/bluel2.webp";
+import proj1d from "../../public/images/projects/bluel5.webp";
 
-import proj2 from "../../public/images/projects/kasa2.webp";
+import proj2 from "../../public/images/projects/kasa6.webp";
+import proj2b from "../../public/images/projects/kasa5.webp";
+import proj2c from "../../public/images/projects/kasa4.webp";
+import proj2d from "../../public/images/projects/kasa3.webp";
+import proj2f from "../../public/images/projects/kasa2.webp";
+
 import proj3 from "../../public/images/projects/Grimoire.webp";
+import proj3b from "../../public/images/projects/grimoire2.webp";
+import proj3c from "../../public/images/projects/grimoire3.webp";
+import proj3d from "../../public/images/projects/grimoire4.webp";
+import proj3f from "../../public/images/projects/grimoire5.webp";
+import proj3g from "../../public/images/projects/grimoire6.webp";
+
 import proj4 from "../../public/images/projects/booki.webp";
+import proj4b from "../../public/images/projects/booki2.webp";
+import proj4c from "../../public/images/projects/booki3.webp";
+import proj4d from "../../public/images/projects/booki5.webp";
+import proj4e from "../../public/images/projects/booki6.webp";
+
 import proj5 from "../../public/images/projects/carducci.webp";
+import proj5b from "../../public/images/projects/carducci2.webp";
+import proj5c from "../../public/images/projects/carducci3.webp";
+import proj5d from "../../public/images/projects/carducci4.webp";
+
 import imgTvShow from "../../public/images/projects/tvshow.webp";
 
 import ProjectModal from "@/components/ProjectModal";
@@ -22,19 +43,6 @@ const FramerImage = motion(Image);
 
 const projects = [
   {
-    type: "React",
-    title: "TV Show, recherche de séries",
-    summary:
-      "Une application de recherche de séries codée en React, avec utilisation d'une API externe qui propose de façon dynamique des recommandations.",
-    img: imgTvShow,
-    github: "https://tvwatch-laurent-delassus-projects.vercel.app/",
-    content: {
-      additionalText: "Description détaillée du projet...",
-      additionalImages: [],
-    },
-  },
-
-  {
     type: "Vanilla JavaScript",
     title: "Sophie, Bluel, architecte d'intérieur",
     summary:
@@ -43,8 +51,22 @@ const projects = [
     github:
       "https://github.com/rezozero59/Portfolio-architecte-sophie-bluel.git",
     content: {
-      additionalText: "Description détaillée du projet...",
-      additionalImages: [proj1b],
+      additionalText:
+        "Ici, tout est codé en pur Javascript. En apui sur une API, les images sont chargées dynamiquement. On y trouve aussi un système de filtre des images. Les opération CRUD sont réalisées en Javascript. La création de projet est réalisée via un formulaire et l'accès par une modale. L'édition est rendue possible seulement avec authentification. Apprendre à coder en pur Javascript est un exercice très formateur, la gestion des requêtes les affichages dynamiques, ou encore apprendre à refactoriser ont permis de progresser.",
+      additionalImages: [proj1b, proj1c, proj1d],
+    },
+  },
+  {
+    type: "React, API",
+    title: "TV Show, recherche et suggestions de séries",
+    summary:
+      "Une application de recherche de séries codée en React, avec utilisation d'une API externe qui propose de façon dynamique des recommandations.",
+    img: imgTvShow,
+    github: "https://tvwatch-laurent-delassus-projects.vercel.app/",
+    content: {
+      additionalText:
+        "Uitilisation de React et d'une API de séries pour proposer un léger clone de Netflix, encore en cours de développement... ",
+      additionalImages: [],
     },
   },
   {
@@ -54,8 +76,9 @@ const projects = [
     img: proj2,
     github: "https://github.com/rezozero59/06-react-kasa-laurent-delassus.git",
     content: {
-      additionalText: "Description détaillée du projet...",
-      additionalImages: [],
+      additionalText:
+        "Préparation du projet côté front-end avec l'utilisation du framework React. Le projet est découpé en composants, dont certains réutilisables. Le projet est réalisé en Sass, responsive, et les animations sont réalisées sans librairies React externe. Apprendre à coder en React est un exercice très formateur, la gestion des états, les affichages dynamiques, les customs hooks, ou encore apprendre à refactoriser ont permis de progresser.",
+      additionalImages: [proj2b, proj2c, proj2d, proj2f],
     },
   },
   {
@@ -66,8 +89,9 @@ const projects = [
     img: proj3,
     github: "https://github.com/rezozero59/P7-grimoire-delassus.git",
     content: {
-      additionalText: "Description détaillée du projet...",
-      additionalImages: [],
+      additionalText:
+        "En lien avec un front-end déjà codé avec React, ce projet est un back-end réalisé avec Node.js, Express et MongoDB. L'API Rest est sécurisée avec JWT. Les opérations CRUD sont réalisées avec Mongoose. La base de données MongoDB est hébergée sur MongoDB Atlas. Apprendre à coder en Node.js est un exercice très formateur, la gestion des requêtes, les affichages dynamiques, ou encore apprendre à refactoriser ont permis de progresser. Créer les routes, les middlewares, les controllers, les models, les schémas, les validations, les tests, les middlewares d'authentification, les middlewares de gestion des erreurs, les middlewares de gestion des fichiers m'ont permis de voir l'importance de la séparation des préoccupations.",
+      additionalImages: [proj3b, proj3c, proj3d, proj3f, proj3g],
     },
   },
   {
@@ -78,8 +102,9 @@ const projects = [
     github:
       "https://github.com/rezozero59/booki-starter-code-master-Delassus.git",
     content: {
-      additionalText: "Description détaillée du projet...",
-      additionalImages: [],
+      additionalText:
+        "Exercice d'intégration d'une maquette en HTML et CSS. Ici, pas de Javascript, pas de framework, pas de bibliothèque, juste du HTML et du CSS. C'était le premier projet réalisé en HTML et CSS, et il a permis de découvrir les bases de l'intégration web.",
+      additionalImages: [proj4b, proj4c, proj4d, proj4e],
     },
   },
   {
@@ -90,8 +115,9 @@ const projects = [
     img: proj5,
     github: "https://github.com/rezozero59/Projet5-OC-delassus.git",
     content: {
-      additionalText: "Description détaillée du projet...",
-      additionalImages: [],
+      additionalText:
+        "Optimisation du référencement naturel, du SEO, de l'accessibilité, des performances, et debboogage des fonctionnnalités problématiques. Allègement des fichiers, minification,HTML sémantique, balises meta, microdonnées... Les outils de développement de Chrome ont été utilisés pour analyser les performances et les problèmes d'accessibilité.  Apprendre à optimiser un site web est un exercice très formateur, la gestion des performances, de l'accessibilité, ou encore apprendre à débugger ont permis de progresser. ",
+      additionalImages: [proj5b, proj5c, proj5d],
     },
   },
 ];

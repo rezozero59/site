@@ -18,7 +18,7 @@ const modalVariants = {
 const closeIcon = (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    className="h-6 w-6"
+    className="h-8 w-8 mx-4 border-2 border-dark dark:border-light rounded-full p-1 hover:bg-dark dark:hover:bg-light hover:text-light dark:hover:text-dark transition-colors duration-300 ease-in-out"
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
@@ -34,55 +34,59 @@ const closeIcon = (
 
 const ProjectModal = ({ isOpen, onClose, project }) => {
   return (
-    <AnimatePresence mode="wait">
-      {isOpen && (
-        <motion.div
-          className="flex items-center justify-center fixed inset-0 z-9999"
-          variants={backdropVariants}
-          initial="hidden"
-          animate="visible"
-          exit="hidden"
-          onClick={onClose}
-        >
+    console.log(project),
+    (
+      <AnimatePresence mode="wait">
+        {isOpen && (
           <motion.div
-            className="flex flex-col items-center justify-center bg-white dark:bg-dark p-6 rounded-lg shadow-lg max-w-5xl w-full relative overflow-y-scroll z-9999
-            "
-            style={{ maxHeight: "85vh" }}
-            variants={modalVariants}
-            onClick={(e) => e.stopPropagation()}
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 "
+            variants={backdropVariants}
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+            onClick={onClose}
           >
-            <button onClick={onClose} className="absolute top-2 right-2 ">
-              {closeIcon}
-            </button>
-            <h2 className="text-2xl font-bold mb-4 text-center">
-              {project.title}
-            </h2>
-            <p className="text-center">{project.summary}</p>
-            <Image
-              className="rounded-lg mb-4"
-              src={project.img}
-              alt={project.title}
-              width={500}
-              height={300}
-            />
-
-            {project.content?.additionalText && (
-              <p className="text-center">{project.content.additionalText}</p>
-            )}
-            {project.content?.additionalImages?.map((image, index) => (
+            <motion.div
+              className="overflow-y-auto flex flex-col items-center bg-white dark:bg-dark p-6 rounded-lg shadow-lg relative "
+              style={{ maxHeight: "80vh", maxWidth: "90vw" }}
+              variants={modalVariants}
+              onClick={(e) => e.stopPropagation()}
+            >
+              <button onClick={onClose} className="absolute top-2 right-2 ">
+                {closeIcon}
+              </button>
+              <h2 className="text-3xl font-bold mb-4 text-center px-4">
+                {project.title}
+              </h2>
+              <p className="text-center ">{project.summary}</p>
               <Image
-                key={index}
-                src={image}
-                alt={`Image supplémentaire ${index}`}
+                className="rounded-lg my-4"
+                src={project.img}
+                alt={project.title}
                 width={500}
                 height={300}
-                className="rounded-lg mb-4"
               />
-            ))}
+
+              {project.content?.additionalText && (
+                <p className=" mx-48 lg:mx-32 md:mx-16 sm:mx-8 my-8">
+                  {project.content.additionalText}
+                </p>
+              )}
+              {project.content?.additionalImages?.map((image, index) => (
+                <Image
+                  key={index}
+                  src={image}
+                  alt={`Image supplémentaire ${index}`}
+                  width={500}
+                  height={300}
+                  className="rounded-lg m-4"
+                />
+              ))}
+            </motion.div>
           </motion.div>
-        </motion.div>
-      )}
-    </AnimatePresence>
+        )}
+      </AnimatePresence>
+    )
   );
 };
 
