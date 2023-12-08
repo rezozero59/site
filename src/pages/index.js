@@ -22,7 +22,7 @@ export default function Home() {
         <title>Laurent Delassus Developpeur</title>
         <meta
           name="description"
-          content="Développeur web full-stack, passionné et créatif, transformer les idées en applications web innovantes. Découvrez mes derniers projets."
+          content="Laurent Delassus Développeur web full-stack, passionné et créatif, transformer les idées en applications web innovantes. Découvrez mes derniers projets."
         />
       </Head>
 
@@ -37,7 +37,7 @@ export default function Home() {
             <div className=" w-1/2 lg:w-full  order-1 lg:order-2  lg:flex lg:justify-center">
               <Image
                 src={profilePic}
-                alt="Portrait de Laurent Delassus"
+                alt="Image de Laurent Delassus"
                 className="h-auto w-2/3 mt-8 rounded-2xl "
                 sizes="80vw"
                 priority
