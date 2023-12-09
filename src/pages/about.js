@@ -38,7 +38,7 @@ export default function About() {
         <title>Laurent Delassus Developpeur</title>
         <meta
           name="description"
-          content="En apprendre sur Laurent Delassus, développeur web full-stack, passionné et créatif, dévellepement web responsive et performant."
+          content="En apprendre sur Laurent Delassus, développeur web full-stack, passionné et créatif, développement web responsive et performant."
         />
       </Head>
 
